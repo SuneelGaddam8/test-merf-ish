@@ -1,0 +1,16 @@
+
+.management_view{
+    width: 100%;
+    background: sty--bg-color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: center; 
+}
+.box_view{
+    width: 80%;
+    background-color: #fff;
+    min-height: 150px;
+    height: fit-content;
+}
