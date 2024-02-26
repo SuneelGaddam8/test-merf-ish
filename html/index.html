@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merf-ish</title>
+  <link rel="stylesheet" href="../css/Style.css" />
+</head>
+
+<body class="container">
+  <div class="header">
+    <div class="header_logo">
+      <img src="../assets/merfsh-logo.png" alt="merf-isy logo" />
+    </div>
+    <div class="header_menu">
+      <div class="header_options">
+        <a href="#" onclick="homeHandler('home')" class="header_btn header_active">home</a>
+        <a href="#" onclick="homeHandler('about')" class="header_btn">about us</a>
+        <a href="#" onclick="homeHandler('management')" class="header_btn">management</a>
+        <a href="#" onclick="homeHandler('academics')" class="header_btn">academics</a>
+        <a href="#" onclick="homeHandler('admissions')" class="header_btn">admission</a>
+        <a href="#" onclick="homeHandler('gallery')" class="header_btn">gallery</a>
+        <a href="#" onclick="homeHandler('faculty')" class="header_btn">faculty</a>
+        <a href="#" onclick="homeHandler('clinicApp')" class="header_btn">clinic app</a>
+        <a href="#" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
+        <a href="#" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="menuBtn" id="menuBtn" onclick="menuDropDown(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#" onclick="homeHandler('home')" class="header_btn header_active">home</a>
+        <a href="#" onclick="homeHandler('about')" class="header_btn">about us</a>
+        <a href="#" onclick="homeHandler('management')" class="header_btn">management</a>
+        <a href="#" onclick="homeHandler('academics')" class="header_btn">academics</a>
+        <a href="#" onclick="homeHandler('admissions')" class="header_btn">admission</a>
+        <a href="#" onclick="homeHandler('gallery')" class="header_btn">gallery</a>
+        <a href="#" onclick="homeHandler('faculty')" class="header_btn">faculty</a>
+        <a href="#" onclick="homeHandler('clinicApp')" class="header_btn">clinic app</a>
+        <a href="#" onclick="homeHandler('testimonials')" class="header_btn">Testimonial</a>
+        <a href="#" onclick="homeHandler('med-el')" class="header_btn">MED-EL</a>
+      </div>
+    </div>
+  </div>
+  <!-- home -->
+  <div class="main_body" id="home">
+
+    <div class="body_banner_admission_open">
+      <h1>
+        Admission open for the academic year <span id="year_view"></span>
+      </h1>
+    </div>
+    <div class="bgc_img_controller_div">
+      <div class="background_img_scroll">
+        <div class="slide_cards fade">
+          <div class="card_info">
+            <h1 style="font-size: 1.6rem; font-family: Poppins">
+              Enroll today
+            </h1>
+            <span style="font-family: Poppins">to join</span>
+            <div style="
+                  background: rgba(102, 78, 59, 1);
+                  font-size: 1.2rem;
+                  width: 200px;
+                  text-align: center;
+                  color: white;
+                  padding: 4px;
+                ">
+              <span>Bandwagon of expert speech and hearing</span>
+            </div>
+            <span style="font-size: 12px">the Professional of Tomorrow</span>
+            <button class="button_style">Enroll now</button>
+          </div>
+          <div class="bg_img">
+            <img src="../assets/bg-logo.png" alt="background image" />
+          </div>
+        </div>
+        <div class="slide_cards fade">
+          <div class="card_info">a</div>
+          <div class="bg_img">
+            <img src="../assets/college-admission-banner.jpg" alt="background image" />
+          </div>
+        </div>
+        <div class="slide_cards fade">
+          <div class="card_info">a</div>
+          <div class="bg_img">
+            <img src="../assets/library-logo.jpg" alt="background image" />
+          </div>
+        </div>
+        <div class="slide_cards fade">
+          <div class="card_info">a</div>
+          <div class="bg_img">
+            <img src="../assets/bg-logo.png" alt="background image" />
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+
+    <div class="courses">
+      <h1 class="header_title">what courses we offer ?</h1>
+      <div class="course_cards_group">
+        <div class="course_cards_view">
+          <div class="course_card">
+            <div class="course_card_header">
+              <span>B.Aslp</span>
+              <span class="graduation_type">ug</span>
+            </div>
+            <div class="course_card_duration">
+              <span>Duration: 36 months</span>
+              <span>15-20 classes/week</span>
+            </div>
+            <div class="course_card_learnMore">
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+          <div class="course_card">
+            <div class="course_card_header">
+              <span>m.Aslp</span>
+              <span class="graduation_type">pg</span>
+            </div>
+            <div class="course_card_duration">
+              <span>Duration: 36 months</span>
+              <span>15-20 classes/week</span>
+            </div>
+            <div class="course_card_learnMore">
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+          <div class="course_card">
+            <div class="course_card_header">
+              <span>msc.slp</span>
+              <span class="graduation_type">pg</span>
+            </div>
+            <div class="course_card_duration">
+              <span>Duration: 36 months</span>
+              <span>15-20 classes/week</span>
+            </div>
+            <div class="course_card_learnMore">
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+          <div class="course_card">
+            <div class="course_card_header">
+              <span>Msc. Audiology</span>
+              <span class="graduation_type">pg</span>
+            </div>
+            <div class="course_card_duration">
+              <span>Duration: 36 months</span>
+              <span>15-20 classes/week</span>
+            </div>
+            <div class="course_card_learnMore">
+              <a href="#">learn more</a>
+            </div>
+          </div>
+
+          <div class="course_card">
+            <div class="course_card_header">
+              <span>PGDAVT</span>
+              <span class="graduation_type">pg</span>
+            </div>
+            <div class="course_card_duration">
+              <span>Duration: 36 months</span>
+              <span>15-20 classes/week</span>
+            </div>
+            <div class="course_card_learnMore">
+              <a href="#">learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience_workers_count">
+      <div>
+        <span class="num" data-val="140">000</span>
+        <span>Doctors at work</span>
+      </div>
+      <div>
+        <span class="num" data-val="1400">000</span>
+        <span>satisfied patients</span>
+      </div>
+      <div>
+        <span class="num" data-val="500">000</span>
+        <span>Bed facility</span>
+      </div>
+      <div>
+        <span class="num" data-val="80">000</span>
+        <span>available hospitals</span>
+      </div>
+    </div>
+
+    <div class="clinical_service">
+      <h1 class="header_title">Clinical Services</h1>
+      <div class="clinical_service_view">
+        <img src="../assets/clinicalService.png" alt="Description of the image" />
+        <div class="clinical_service_view_data">
+          <span>Our clinical services are designed to cater to your unique
+            healthcare needs with professionalism, expertise, and
+            dedication.</span>
+          <button class="button_style">More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="why_choose_merf_ish">
+      <h1 class="header_title">why choose MERF-ISH ?</h1>
+      <div class="reason_cards_group">
+        <div class="reason_cards_view">
+          <div class="reason_cards">
+            <img src="../assets/Vector.png" alt="Vector" />
+            <span>One of the Leading Centers in the world for “Hearing
+              Restoration”</span>
+          </div>
+          <div class="reason_cards">
+            <img src="../assets/ic_baseline-hearing.png" alt="ic_baseline-hearing" />
+            <span>Biggest and most advanced hearing implant center in the
+              world</span>
+          </div>
+          <div class="reason_cards">
+            <img src="../assets/Vector-nook&corner.png" alt="Vector-nook&corner" />
+
+            <span>Extensive Out Reach Programme to serve the people in nook &
+              corner of the state</span>
+          </div>
+          <div class="reason_cards">
+            <img src="../assets/file-icons_service-fabric.png" alt="Vector-nook&corner" />
+
+            <span>Only Institute in India to be a member of HEARING Network</span>
+          </div>
+          <div class="reason_cards">
+            <img src="../assets/grommet-icons_user-expert.png" alt="Vector-nook&corner" />
+
+            <span>Facilities and activities to network with International
+              Experts</span>
+          </div>
+          <div class="reason_cards">
+            <img src="../assets/ri_group-line.png" alt="Vector-nook&corner" />
+            <span>Experienced and Competent Faculty, who are passionate in
+              Teaching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why_choose_merf_ish">
+      <h1 class="header_title">Testimonials</h1>
+      <div class="testimonial_view">
+        <div class="testimonial_view_card">
+          <div class="testmonial_image">
+            <img src="../assets/user_testimonial_1.png" alt="no" />
+          </div>
+          <div class='testimonial_content'>
+            <div class="testimonial_content_about">
+              <strong> Tychicus Dinakaran <br /><span>Speech And Language Pathologist, Al Maha Centre</span></strong>
+              <a href="#">learn more</a>
+            </div>
+            <div class="testimonial_content_quote"><strong>“Come into the field if you have as strong Inner motivation
+                to make a Difference”</strong></div>
+          </div>
+        </div>
+        <div class="testimonial_view_card">
+          <div class="testmonial_image">
+            <img src="../assets/user-2.png" alt="no" />
+          </div>
+          <div class='testimonial_content'>
+            <div class="testimonial_content_about">
+              <strong> Tychicus Dinakaran <br /><span>Speech And Language Pathologist, Al Maha Centre</span></strong>
+              <a href="#">learn more</a>
+            </div>
+            <div class="testimonial_content_quote"><strong>“Come into the field if you have as strong Inner motivation
+                to make a Difference”</strong></div>
+          </div>
+        </div>
+
+        <button class="button_style">More Testimonials</button>
+
+      </div>
+    </div>
+  </div> 
+  <!-- about -->
+<div class="main_body" id="about">about</div>
+  <!-- management -->
+  <div class="main_body " id="management">
+    <div class="view_managements" id="view_managements" data-user="Mohan Kameswaran">
+      <div class="banner_horizantal">
+        <div class="banner_content" id="banner_content">
+          <div class="banner_content_header">
+            <h1 class="header_title">Dr. Mohan Kameswaran</h1>
+            <span>(Founder)</span>
+          </div>
+          <p class="banner_content_about">
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong> Dr. MOHAN
+              KAMESWARAN</strong> is a leading ENT Surgeon in India and a recipient of
+            the “PADMASHRI” award from the Government of India in 2006. For
+            his contribution in the field of ENT and the Hearing impaired, he
+            was conferred “INDO-AUSTRALIAN AWARD FOR MERITORIOUS SERVICE’ by
+            Indo-Australian Association, Chennai. He was honored by His
+            Excellency, President of Srilanka for ‘PIONEERING THE COCHLEAR
+            IMPLANT PROGRAM IN SRILANKA’.
+              He was awarded with ‘AWARD FOR EXCELLENCE’ by His Excellency,
+              The Governor of Kerala. He was also conferred ‘FOR THE SAKE OF
+              HONOUR AWARD’ by Rotary Club of Madras Esplanade, Chennai.
+              <br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Madras ENT Research Foundation hospital started by Dr.
+              Mohan
+              Kameswaran is one of the leading centers of ENT Practice and
+              Research. For years it has been a Mecca for ENT & Audiology
+              related education in India. Numerous students have passed
+              through its portals. It has also served as a centre for higher
+              learning for overseas surgeons and audiologists. Dr. Mohan
+              Kameswaran is one of the key figures in revolutionizing social
+              awareness towards deafness in India. He has had an exemplary
+              academic record throughout and starting an academic institution
+              of repute was a natural course of action by this Stalwart. Hence
+              starting MERF Institute of Speech and Hearing was the extension
+              of vision envisaged by Dr. Mohan Kameswaran.
+            
+          </p>
+        </div>
+        <div class="banner_profile">
+          <img src="../assets/mohan-chairman" alt="" />
+          <!-- <span class="name_under_image">(Dr. Mohan Kameswaran)</span> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="view_managements" id="view_managements" data-user="Kameswaran">
+      <div class="banner_horizantal">
+        <div class="banner_content" id="banner_content">
+          <div class="banner_content_header">
+            <h1 class="header_title">Mrs. indira M. Kameswaran</h1>
+            <span>(Founder Director)</span>
+          </div>
+          <p class="banner_content_about">
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <strong>Dr. MOHAN
+              KAMESWARAN</strong> is a leading ENT Surgeon in India and a recipient of
+            the “PADMASHRI” award from the Government of India in 2006. For
+            his contribution in the field of ENT and the Hearing impaired, he
+            was conferred “INDO-AUSTRALIAN AWARD FOR MERITORIOUS SERVICE’ by
+            Indo-Australian Association, Chennai. He was honored by His
+            Excellency, President of Srilanka for ‘PIONEERING THE COCHLEAR
+            IMPLANT PROGRAM IN SRILANKA’.
+              He was awarded with ‘AWARD FOR EXCELLENCE’ by His Excellency,
+              The Governor of Kerala. He was also conferred ‘FOR THE SAKE OF
+              HONOUR AWARD’ by Rotary Club of Madras Esplanade, Chennai.
+              <br>
+              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Madras ENT Research Foundation hospital started by Dr.
+              Mohan
+              Kameswaran is one of the leading centers of ENT Practice and
+              Research. For years it has been a Mecca for ENT & Audiology
+              related education in India. Numerous students have passed
+              through its portals. It has also served as a centre for higher
+              learning for overseas surgeons and audiologists. Dr. Mohan
+              Kameswaran is one of the key figures in revolutionizing social
+              awareness towards deafness in India. He has had an exemplary
+              academic record throughout and starting an academic institution
+              of repute was a natural course of action by this Stalwart. Hence
+              starting MERF Institute of Speech and Hearing was the extension
+              of vision envisaged by Dr. Mohan Kameswaran.
+          
+          </p>
+        </div>
+        <div class="banner_profile">
+          <img src="../assets/indira-director-founder.jpg" alt="" />
+          <!-- <span class="name_under_image">(Mrs. Indiran <br>M. Kameswaran)</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="view_managements" id="view_managements" data-user="ANAND KUMAR">
+      <div class="banner_horizantal">
+        <div class="banner_content" id="banner_content">
+          <div class="banner_content_header">
+            <h1 class="header_title">Dr. R.S. Anand kumar</h1>
+            <span>(Founder Director)</span>
+          </div>
+          <p class="banner_content_about">
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong>Dr. R.S. ANAND KUMAR,B.Sc, MS, DLO</strong> has over 30 yrs
+            experience in ENT and Head & Neck surgery. He is a Senior ENT consultant and his interests are in the field
+            of Cochlear implantation, Laser surgery, Endoscopic sinus surgery and Skull base surgery. He has conducted
+            several workshops, camps. Being the Academic Director, he directs the postgraduate program of training for
+            doctors at Madras ENT Research Foundation (P) Ltd.
+            </span>
+          </p>
+        </div>
+        <div class="banner_profile">
+          <img src="../assets/anand-director-founder.jpg" alt="" />
+          <!-- <span class="name_under_image">(Mrs. Indiran <br>M. Kameswaran)</span> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="view_managements" id="view_managements" data-user="JAGANNATH">
+      <div class="banner_horizantal">
+        <div class="banner_content" id="banner_content">
+          <div class="banner_content_header">
+            <h1 class="header_title">Dr. M. jagannath</h1>
+            <span>(Founder)</span>
+          </div>
+          <p class="banner_content_about">
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<strong>Dr. M. JAGANNATH,MD, DA</strong> has more than 30 years experience
+            in the field of Anesthesia.His interest is in the field of anesthesia for Cochlear Implantation for deaf
+            children. He has maximum number of such cases to his credit, the highest in the country. He is also the
+            first to anaesthetize a patient for “Brain Stem Implant” in Chennai, which was the first of its kind in
+            South East Asia. He heads the Dept. of Anesthesia at Madras ENT Research Foundation (P) Ltd.
+
+
+            </span>
+          </p>
+        </div>
+        <div class="banner_profile">
+          <img src="../assets/jagannath-founder-director.jpg" alt="" />
+          <!-- <span class="name_under_image">(Dr. Mohan Kameswaran)</span> -->
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+  <div class="main_body" id="academics">academics</div>
+  <div class="main_body" id="admissions">admissions</div>
+  <div class="main_body" id="gallery">gallery</div>
+  <div class="main_body" id="faculty">faculty</div>
+  <div class="main_body" id="clinicApp">clinicApp</div>
+  <div class="main_body" id="testimonials">testimonials</div>
+  <div class="main_body" id="med-el">medel</div>
+</body>
+<script src="../js/index.js"></script>
+<script src="../js/header.js"></script>
+
+</html>
